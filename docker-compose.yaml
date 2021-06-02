@@ -6,6 +6,7 @@ services:
     ports:
       - 4873:4873
     volumes:
+      - ./config.yaml:/opt/verdaccio/conf/config.yaml
       - storage:/opt/verdaccio/storage
 
 volumes:
